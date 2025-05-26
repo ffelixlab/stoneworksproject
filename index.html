@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dein Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background-image: url("MinecraftScreenshot.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    h2 {
+      font-family: monospace;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      transition: font-style 0.3s;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    h2:hover {
+      font-style: italic;
+    }
+
+    .button {
+      position: absolute;
+      padding: 10px 20px;
+      background-color: #1f1f1fcc;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: monospace;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    #copyBtn {
+      top: 20px;
+      right: 20px;
+    }
+
+    #aboutBtn {
+      top: 20px;
+      left: 20px;
+    }
+
+    #about {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    #about p {
+      max-width: 600px;
+      margin: auto;
+      font-family: monospace;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="button" id="aboutBtn" href="https://discord.gg/XsV99wCraE" target="_blank">About</a>
+    <button class="button" id="copyBtn" onclick="copyIP()">mc.stoneworks.network</button>
+
+    <h1>Dein Minecraft Server.</h1>
+    <h2>Für Immer. Für ewig.</h2>
+  </header>
+
+  <section id="about">
+    <h1>Über Uns</h1>
+    <p>
+      Willkommen auf unserem Citybuild Server! Baue, handle und entdecke eine lebendige Welt voller Möglichkeiten – allein oder mit Freunden.
+    </p>
+  </section>
+
+  <script>
+    function copyIP() {
+      navigator.clipboard.writeText("mc.stoneworks.network").then(() => {
+        alert("IP-Adresse kopiert: mc.stoneworks.network");
+      });
+    }
+  </script>
+
+</body>
+</html>
