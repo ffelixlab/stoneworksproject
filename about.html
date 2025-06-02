@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dein Minecraft Server</title>
+  <title>StoneWorksMC – Über Uns</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -50,10 +50,11 @@
       align-items: center;
       text-align: center;
       padding: 20px;
-      background-image: url("MinecraftScreenshot.png");
+      background-image: url("ScreenShotAbout.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      padding-top: 60px; 
     }
 
     h1 {
@@ -68,62 +69,45 @@
       margin-top: 1rem;
       transition: font-style 0.3s;
       text-shadow: 1px 1px 3px #000;
+      white-space: pre-line;
+      max-width: 90%;
     }
 
     h2:hover {
       font-style: italic;
-    }
-
-    #about {
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    #about p {
-      max-width: 600px;
-      margin: auto;
-      font-family: monospace;
-      font-size: 1.1rem;
-    }
-
-    header {
-      padding-top: 60px;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="about.html">Über Uns</a>
-    <a href="https://discord.gg/F4d5eArs4D" target="_blank" rel="noopener noreferrer">Discord</a>
-    <a href="#" id="copy-ip">Server-IP</a>
+    <a href="index.html">Startseite</a>
+    <a href="discord.html">Discord</a>
+    <a href="ip.html">Server-IP</a>
   </nav>
 
   <header>
-    <h1>Dein Minecraft Server.</h1>
-    <h2>Für Immer. Für ewig.</h2>
+    <h1>StoneWorksMC</h1>
+    <h2>
+🎉 Herzlich Willkommen auf StoneWorksMC!
+
+🔧 Was wir dir bieten:
+-Ein selbst entwickeltes Plot-System (auf Paper-Basis)
+-Eine Farmwelt mit RTP-Funktion und zentralem Spawn
+-Einen riesigen Hub mit Free Stuff, Shops und coolen Extras
+-Events, Challenges und eine aktive Community
+-Eine eigene Website mit Online-Shop – sichere dir Ränge, Crates und mehr!
+
+🏗️ Was du bei uns machen kannst:
+-Baue dein eigenes Grundstück – ganz nach deinen Vorstellungen
+-Nimm regelmäßig an Events teil und gewinne coole Belohnungen
+-Verdiene dir Features durch Spielen oder kaufe sie im Shop
+-Wir wünschen dir ganz viel Spaß und unvergessliche Abenteuer auf
+-StoneWorksMC – dein Server, deine Welt! 🌍✨
+
+– Dein StoneWorksMC-Team
+    </h2>
   </header>
-
-  <section id="about">
-    <h1>Über Uns</h1>
-    <p>
-      Willkommen auf unserem Citybuild Server! Baue, handle und entdecke eine lebendige Welt voller Möglichkeiten – allein oder mit Freunden.
-    </p>
-  </section>
-
-  <script>
-    document.getElementById("copy-ip").addEventListener("click", function (e) {
-      e.preventDefault();
-      const ip = "mc.stoneworks.network"; 
-      navigator.clipboard.writeText(ip).then(() => {
-        alert("Server-IP wurde in die Zwischenablage kopiert: " + ip);
-      }).catch(err => {
-        alert("Fehler beim Kopieren der IP.");
-        console.error(err);
-      });
-    });
-  </script>
 
 </body>
 </html>
-
